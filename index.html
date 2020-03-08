@@ -12,7 +12,6 @@
 
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
     <!-- stylesheet-->
     <link rel="stylesheet" media="screen" type="text/css" href="styles.css">
 
@@ -37,20 +36,20 @@
         <form id='form' action="#">
           <div class="form-row">
             <div class="col-md-12 mb-3">
-              <input type="text" id="name" class="form-control" placeholder="First name">
+              <input type="text" id="name" class="form-control" placeholder="First name" onfocus="this.placeholder=''" onblur="this.placeholder='First name'">
             </div>
           </div>
 
           <div class="form-row">
             <div class="col-md-12 mb-3">
-              <input type="email" id="email" class="form-control" placeholder="Email address">
+              <input type="email" id="email" class="form-control" placeholder="Email address" onfocus="this.placeholder=''" onblur="this.placeholder='Email address'">
               <div class="invalid-feedback">Please enter a valid email address</div>
             </div>
           </div>
 
           <div class="form-row">
             <div class="col-md-12 mb-3">
-              <select id="option" class="custom-select mr-sm-2">
+              <select class="custom-select mr-sm-2">
                 <option selected>I would describe my user type as</option>
                 <option value="1">Developer</option>
                 <option value="2">Entrepreneur</option>
@@ -60,8 +59,8 @@
           </div>
 
           <div class="form-row">
-            <div class="inputBox col-md-12 mb-3">
-              <input type="password" id="password" class="form-control input" placeholder="Password">
+            <div class="col-md-12 mb-3">
+                <input type="password" id="password" class="form-control" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'">
               <small id="passwordHelp" class="form-text text-muted">Minimum 8 charachters</small>
             </div>
           </div>
